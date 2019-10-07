@@ -26,6 +26,11 @@ namespace JFF { namespace Graphics
 		m_shape.setPosition(position);
 	}
 
+	void Shape::SetTexture(sf::Texture const* texture, bool adaptRect /*= false*/)
+	{
+		m_shape.setTexture(texture, adaptRect);
+	}
+
 	void Shape::Render(sf::RenderWindow* window) const
 	{
 		window->draw(m_shape);

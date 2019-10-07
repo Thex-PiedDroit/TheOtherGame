@@ -6,14 +6,14 @@
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(200, 200), "It's a window");
+	sf::RenderWindow window(sf::VideoMode(800, 600), "It's a window");
 	JFF::Graphics::RenderManager::SetMainWindow(&window);
 
-	JFF::Graphics::Rectangle shape(sf::Vector2f(50.0f, 50.0f));
-	shape.SetFillColor(sf::Color::Green);
+	sf::Texture cow;
+	cow.loadFromFile("Data/Cow.png");
 
-	shape.SetOrigin(sf::Vector2f(25.0f, 25.0f));
-	shape.SetPosition(sf::Vector2f(100.0f, 100.0f));
+	JFF::Graphics::Rectangle shape(sf::Vector2f(100.0f, 100.0f));
+	shape.SetTexture(&cow, true);
 
 
 	while (window.isOpen())
@@ -30,7 +30,7 @@ int main()
 			}
 		}
 
-		window.clear();
+		window.clear(sf::Color::White);
 		JFF::Graphics::RenderManager::RenderItems();
 		window.display();
 	}

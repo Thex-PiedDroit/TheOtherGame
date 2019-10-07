@@ -17,6 +17,8 @@ namespace JFF { namespace Graphics
 		void SetOrigin(sf::Vector2f const& origin);
 		void SetPosition(sf::Vector2f const& position);
 
+		void SetTexture(sf::Texture const* texture, bool adaptRect = false);
+
 		void Render(sf::RenderWindow* window) const override final;
 
 
