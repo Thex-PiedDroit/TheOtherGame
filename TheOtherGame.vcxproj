@@ -19,12 +19,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Code\Engine\Graphics\RenderManager.cpp" />
+    <ClCompile Include="Code\Engine\Graphics\Shapes\Circle.cpp" />
+    <ClCompile Include="Code\Engine\Graphics\Shapes\Rectangle.cpp" />
+    <ClCompile Include="Code\Engine\Graphics\Shapes\Shape.cpp" />
     <ClCompile Include="Code\Engine\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\Engine\asserts.hpp" />
     <ClInclude Include="Code\Engine\defines.h" />
     <ClInclude Include="Code\Engine\generics.hpp" />
+    <ClInclude Include="Code\Engine\Graphics\IRenderItem.h" />
+    <ClInclude Include="Code\Engine\Graphics\RenderManager.h" />
+    <ClInclude Include="Code\Engine\Graphics\Shapes\Circle.h" />
+    <ClInclude Include="Code\Engine\Graphics\Shapes\Rectangle.h" />
+    <ClInclude Include="Code\Engine\Graphics\Shapes\Shape.h" />
     <ClInclude Include="Code\Engine\types.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

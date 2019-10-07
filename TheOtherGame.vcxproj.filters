@@ -16,10 +16,28 @@
     <Filter Include="Source Files\Engine">
       <UniqueIdentifier>{868eb7ff-5b96-48cc-9686-6b2154172b90}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Engine\Graphics">
+      <UniqueIdentifier>{003a4db5-e837-457e-9a8b-b762fef02c11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Graphics\Shapes">
+      <UniqueIdentifier>{3a45e10f-6a42-4c89-bc47-40e185466e5d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Code\Engine\main.cpp">
       <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Engine\Graphics\RenderManager.cpp">
+      <Filter>Source Files\Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Engine\Graphics\Shapes\Shape.cpp">
+      <Filter>Source Files\Engine\Graphics\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Engine\Graphics\Shapes\Circle.cpp">
+      <Filter>Source Files\Engine\Graphics\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Engine\Graphics\Shapes\Rectangle.cpp">
+      <Filter>Source Files\Engine\Graphics\Shapes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +52,21 @@
     </ClInclude>
     <ClInclude Include="Code\Engine\defines.h">
       <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Engine\Graphics\IRenderItem.h">
+      <Filter>Source Files\Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Engine\Graphics\RenderManager.h">
+      <Filter>Source Files\Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Engine\Graphics\Shapes\Shape.h">
+      <Filter>Source Files\Engine\Graphics\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Engine\Graphics\Shapes\Circle.h">
+      <Filter>Source Files\Engine\Graphics\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Engine\Graphics\Shapes\Rectangle.h">
+      <Filter>Source Files\Engine\Graphics\Shapes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
