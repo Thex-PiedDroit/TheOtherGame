@@ -24,51 +24,51 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Code\Engine\main.cpp">
+    <ClCompile Include="Source\Engine\main.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
-    <ClCompile Include="Code\Engine\Graphics\RenderManager.cpp">
+    <ClCompile Include="Source\Engine\Graphics\RenderManager.cpp">
       <Filter>Source Files\Engine\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Code\Engine\Graphics\Shapes\Shape.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Shapes\Shape.cpp">
       <Filter>Source Files\Engine\Graphics\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="Code\Engine\Graphics\Shapes\Circle.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Shapes\Circle.cpp">
       <Filter>Source Files\Engine\Graphics\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="Code\Engine\Graphics\Shapes\Rectangle.cpp">
+    <ClCompile Include="Source\Engine\Graphics\Shapes\Rectangle.cpp">
       <Filter>Source Files\Engine\Graphics\Shapes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Code\Engine\asserts.hpp">
+    <ClInclude Include="Source\Engine\asserts.hpp">
       <Filter>Source Files\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Engine\generics.hpp">
+    <ClInclude Include="Source\Engine\generics.hpp">
       <Filter>Source Files\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Engine\types.hpp">
+    <ClInclude Include="Source\Engine\types.hpp">
       <Filter>Source Files\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Engine\defines.h">
+    <ClInclude Include="Source\Engine\defines.h">
       <Filter>Source Files\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Engine\Graphics\IRenderItem.h">
+    <ClInclude Include="Source\Engine\Graphics\IRenderItem.h">
       <Filter>Source Files\Engine\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Engine\Graphics\RenderManager.h">
+    <ClInclude Include="Source\Engine\Graphics\RenderManager.h">
       <Filter>Source Files\Engine\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Engine\Graphics\Shapes\Shape.h">
+    <ClInclude Include="Source\Engine\Graphics\Shapes\Shape.h">
       <Filter>Source Files\Engine\Graphics\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Engine\Graphics\Shapes\Circle.h">
+    <ClInclude Include="Source\Engine\Graphics\Shapes\Circle.h">
       <Filter>Source Files\Engine\Graphics\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Engine\Graphics\Shapes\Rectangle.h">
+    <ClInclude Include="Source\Engine\Graphics\Shapes\Rectangle.h">
       <Filter>Source Files\Engine\Graphics\Shapes</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Engine\Graphics\Shapes\Shapes.h">
+    <ClInclude Include="Source\Engine\Graphics\Shapes\Shapes.h">
       <Filter>Source Files\Engine\Graphics\Shapes</Filter>
     </ClInclude>
   </ItemGroup>

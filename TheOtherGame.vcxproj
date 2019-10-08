@@ -19,23 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Code\Engine\Graphics\RenderManager.cpp" />
-    <ClCompile Include="Code\Engine\Graphics\Shapes\Circle.cpp" />
-    <ClCompile Include="Code\Engine\Graphics\Shapes\Rectangle.cpp" />
-    <ClCompile Include="Code\Engine\Graphics\Shapes\Shape.cpp" />
-    <ClCompile Include="Code\Engine\main.cpp" />
+    <ClCompile Include="Source\Engine\Graphics\RenderManager.cpp" />
+    <ClCompile Include="Source\Engine\Graphics\Shapes\Circle.cpp" />
+    <ClCompile Include="Source\Engine\Graphics\Shapes\Rectangle.cpp" />
+    <ClCompile Include="Source\Engine\Graphics\Shapes\Shape.cpp" />
+    <ClCompile Include="Source\Engine\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Code\Engine\asserts.hpp" />
-    <ClInclude Include="Code\Engine\defines.h" />
-    <ClInclude Include="Code\Engine\generics.hpp" />
-    <ClInclude Include="Code\Engine\Graphics\IRenderItem.h" />
-    <ClInclude Include="Code\Engine\Graphics\RenderManager.h" />
-    <ClInclude Include="Code\Engine\Graphics\Shapes\Circle.h" />
-    <ClInclude Include="Code\Engine\Graphics\Shapes\Rectangle.h" />
-    <ClInclude Include="Code\Engine\Graphics\Shapes\Shape.h" />
-    <ClInclude Include="Code\Engine\Graphics\Shapes\Shapes.h" />
-    <ClInclude Include="Code\Engine\types.hpp" />
+    <ClInclude Include="Source\Engine\asserts.hpp" />
+    <ClInclude Include="Source\Engine\defines.h" />
+    <ClInclude Include="Source\Engine\generics.hpp" />
+    <ClInclude Include="Source\Engine\Graphics\IRenderItem.h" />
+    <ClInclude Include="Source\Engine\Graphics\RenderManager.h" />
+    <ClInclude Include="Source\Engine\Graphics\Shapes\Circle.h" />
+    <ClInclude Include="Source\Engine\Graphics\Shapes\Rectangle.h" />
+    <ClInclude Include="Source\Engine\Graphics\Shapes\Shape.h" />
+    <ClInclude Include="Source\Engine\Graphics\Shapes\Shapes.h" />
+    <ClInclude Include="Source\Engine\types.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -89,19 +89,19 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\VS_Libs\SFML-2.5.1\include;D:\Repos\TheOtherGame\Code;$(IncludePath)</IncludePath>
+    <IncludePath>D:\VS_Libs\SFML-2.5.1\include;D:\Repos\TheOtherGame\Source;$(IncludePath)</IncludePath>
     <LibraryPath>D:\VS_Libs\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\VS_Libs\SFML-2.5.1\include;D:\Repos\TheOtherGame\Code;$(IncludePath)</IncludePath>
+    <IncludePath>D:\VS_Libs\SFML-2.5.1\include;D:\Repos\TheOtherGame\Source;$(IncludePath)</IncludePath>
     <LibraryPath>D:\VS_Libs\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>D:\VS_Libs\SFML-2.5.1\include;D:\Repos\TheOtherGame\Code;$(IncludePath)</IncludePath>
+    <IncludePath>D:\VS_Libs\SFML-2.5.1\include;D:\Repos\TheOtherGame\Source;$(IncludePath)</IncludePath>
     <LibraryPath>D:\VS_Libs\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>D:\VS_Libs\SFML-2.5.1\include;D:\Repos\TheOtherGame\Code;$(IncludePath)</IncludePath>
+    <IncludePath>D:\VS_Libs\SFML-2.5.1\include;D:\Repos\TheOtherGame\Source;$(IncludePath)</IncludePath>
     <LibraryPath>D:\VS_Libs\SFML-2.5.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
