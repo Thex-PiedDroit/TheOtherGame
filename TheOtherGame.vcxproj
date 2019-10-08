@@ -26,6 +26,7 @@
     <ClCompile Include="Source\Engine\Graphics\Shapes\Rectangle.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Shapes\Shape.cpp" />
     <ClCompile Include="Source\Engine\main.cpp" />
+    <ClCompile Include="Source\Gameplay\Entities\Animals\Cow.cpp" />
     <ClCompile Include="Source\Gameplay\gameMain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +43,7 @@
     <ClInclude Include="Source\Engine\Graphics\Shapes\Shape.h" />
     <ClInclude Include="Source\Engine\Graphics\Shapes\Shapes.h" />
     <ClInclude Include="Source\Engine\types.hpp" />
+    <ClInclude Include="Source\Gameplay\Entities\Animals\Cow.h" />
     <ClInclude Include="Source\Gameplay\gameMain.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
