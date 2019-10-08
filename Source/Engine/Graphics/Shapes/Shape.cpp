@@ -4,7 +4,7 @@
 #include "Engine/assert.hpp"
 
 
-namespace JFF { namespace Graphics
+namespace JFF
 {
 	Shape::Shape(sf::Shape& shape)
 		: IRenderItem()
@@ -52,4 +52,4 @@ namespace JFF { namespace Graphics
 	{
 		window->draw(m_shape);
 	}
-}}
+}

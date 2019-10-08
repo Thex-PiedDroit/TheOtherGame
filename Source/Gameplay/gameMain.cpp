@@ -2,15 +2,12 @@
 #include "gameMain.h"
 
 
-namespace JFF
+void Initialize()
 {
-	void Initialize()
-	{
 
-	}
+}
 
-	void Update()
-	{
+void Update()
+{
 
-	}
 }

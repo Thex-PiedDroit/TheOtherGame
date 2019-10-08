@@ -4,12 +4,13 @@
 #include "types.hpp"
 
 
-namespace JFF { namespace Generics
+namespace JFF
 {
 	const i32 SECONDS = 1000;
 
 	const u32 SCREEN_SIZE_X = 640;
 	const u32 SCREEN_SIZE_Y = 480;
+
 
 	template<typename T>
 	T* CreateBuffer(size_t size)
@@ -21,4 +22,4 @@ namespace JFF { namespace Generics
 
 		return buffer;
 	}
-}}
+}
