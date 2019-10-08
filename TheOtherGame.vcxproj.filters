@@ -22,6 +22,9 @@
     <Filter Include="Source Files\Engine\Graphics\Shapes">
       <UniqueIdentifier>{3a45e10f-6a42-4c89-bc47-40e185466e5d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Gameplay">
+      <UniqueIdentifier>{9a20ed9a-5f3b-4f64-b932-ddd4d2a9bd14}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Engine\main.cpp">
@@ -39,11 +42,11 @@
     <ClCompile Include="Source\Engine\Graphics\Shapes\Rectangle.cpp">
       <Filter>Source Files\Engine\Graphics\Shapes</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Gameplay\gameMain.cpp">
+      <Filter>Source Files\Gameplay</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Engine\asserts.hpp">
-      <Filter>Source Files\Engine</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Engine\generics.hpp">
       <Filter>Source Files\Engine</Filter>
     </ClInclude>
@@ -70,6 +73,12 @@
     </ClInclude>
     <ClInclude Include="Source\Engine\Graphics\Shapes\Shapes.h">
       <Filter>Source Files\Engine\Graphics\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\assert.hpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Gameplay\gameMain.h">
+      <Filter>Source Files\Gameplay</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

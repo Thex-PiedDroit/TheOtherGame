@@ -25,9 +25,13 @@ namespace JFF { namespace Graphics
 		if (s_mainWindow == nullptr)
 			return;
 
+		s_mainWindow->clear(sf::Color(100.0f, 100.0f, 100.0f, 255.0f));
+
 		for (auto const& item : s_renderItems)
 		{
 			item->Render(s_mainWindow);
 		}
+
+		s_mainWindow->display();
 	}
 }}
