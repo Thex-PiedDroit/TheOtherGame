@@ -1,17 +1,13 @@
 
+#include "assert.hpp"
+#include "Gameplay/gameMain.h"
 #include "Graphics/RenderManager.h"
-#include "Graphics/Shapes/Shapes.h"
+
 #include <SFML/Graphics.hpp>
 
 
-int main()
+void GameLoop(sf::RenderWindow& window)
 {
-	sf::RenderWindow window(sf::VideoMode(800, 600), "It's a window");
-	JFF::Graphics::RenderManager::SetMainWindow(&window);
-
-	JFF::Graphics::Rectangle shape(sf::Vector2f(100.0f, 100.0f));
-	shape.LoadTexture("Cow.png");
-
 	while (window.isOpen())
 	{
 		sf::Event event;
@@ -26,10 +22,19 @@ int main()
 			}
 		}
 
-		window.clear(sf::Color(100.0f, 100.0f, 100.0f, 255.0f));
+		JFF::Update();
 		JFF::Graphics::RenderManager::RenderItems();
-		window.display();
 	}
+}
+
+int main()
+{
+	sf::RenderWindow window(sf::VideoMode(800, 600), "It's a window");
+	JFF::Graphics::RenderManager::SetMainWindow(&window);
+
+	JFF::Initialize();
+
+	GameLoop(window);
 
 	return 0;
 }

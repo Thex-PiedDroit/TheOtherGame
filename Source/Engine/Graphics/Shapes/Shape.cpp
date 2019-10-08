@@ -1,6 +1,7 @@
 
-#include "Engine/Graphics/Shapes/Shape.h"
-#include "Engine/asserts.hpp"
+#include "Shape.h"
+
+#include "Engine/assert.hpp"
 
 
 namespace JFF { namespace Graphics
@@ -37,7 +38,7 @@ namespace JFF { namespace Graphics
 		}
 		else
 		{
-			AssertNotReached("Texture \"" + textureName + "\" could not be loaded.");
+			throw_assertNotReached("Texture \"" + textureName + "\" could not be loaded.");
 		}
 	}
 
