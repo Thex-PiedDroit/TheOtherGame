@@ -2,7 +2,7 @@
 #include "Rectangle.h"
 
 
-namespace JFF { namespace Graphics
+namespace JFF
 {
 	Rectangle::Rectangle(sf::Vector2f const& size /*= sf::Vector2f(0.0f, 0.0f)*/)
 		: Shape(m_rectangle)
@@ -10,4 +10,4 @@ namespace JFF { namespace Graphics
 	{
 
 	}
-}}
+}

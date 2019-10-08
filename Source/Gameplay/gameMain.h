@@ -2,8 +2,5 @@
 #pragma once
 
 
-namespace JFF
-{
-	void Initialize();
-	void Update();
-}
+void Initialize();
+void Update();

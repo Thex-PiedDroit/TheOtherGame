@@ -22,7 +22,7 @@ void GameLoop(sf::RenderWindow& window)
 			}
 		}
 
-		JFF::Update();
+		Update();
 		JFF::Graphics::RenderManager::RenderItems();
 	}
 }
@@ -32,7 +32,7 @@ int main()
 	sf::RenderWindow window(sf::VideoMode(800, 600), "It's a window");
 	JFF::Graphics::RenderManager::SetMainWindow(&window);
 
-	JFF::Initialize();
+	Initialize();
 
 	GameLoop(window);
 
