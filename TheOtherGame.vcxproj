@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Engine\Components\Transform2D.cpp" />
+    <ClCompile Include="Source\Engine\EventSystem\EventSystem.cpp" />
     <ClCompile Include="Source\Engine\Graphics\RenderManager.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Shapes\Circle.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Shapes\Rectangle.cpp" />
@@ -28,7 +30,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Engine\assert.hpp" />
+    <ClInclude Include="Source\Engine\Components\Transform2D.h" />
     <ClInclude Include="Source\Engine\defines.h" />
+    <ClInclude Include="Source\Engine\EventSystem\EventSystem.h" />
+    <ClInclude Include="Source\Engine\EventSystem\EventType.h" />
     <ClInclude Include="Source\Engine\generics.hpp" />
     <ClInclude Include="Source\Engine\Graphics\IRenderItem.h" />
     <ClInclude Include="Source\Engine\Graphics\RenderManager.h" />

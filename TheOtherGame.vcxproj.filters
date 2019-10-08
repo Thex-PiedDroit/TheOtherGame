@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Gameplay">
       <UniqueIdentifier>{9a20ed9a-5f3b-4f64-b932-ddd4d2a9bd14}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Engine\Components">
+      <UniqueIdentifier>{bafeae64-da94-4b23-9a91-c8d842b54cee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\EventSystem">
+      <UniqueIdentifier>{41f19715-64a4-42ab-8bc7-f4fe6e7c4330}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Engine\main.cpp">
@@ -44,6 +50,12 @@
     </ClCompile>
     <ClCompile Include="Source\Gameplay\gameMain.cpp">
       <Filter>Source Files\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\EventSystem\EventSystem.cpp">
+      <Filter>Source Files\Engine\EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Components\Transform2D.cpp">
+      <Filter>Source Files\Engine\Components</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +91,15 @@
     </ClInclude>
     <ClInclude Include="Source\Gameplay\gameMain.h">
       <Filter>Source Files\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\EventSystem\EventSystem.h">
+      <Filter>Source Files\Engine\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Components\Transform2D.h">
+      <Filter>Source Files\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\EventSystem\EventType.h">
+      <Filter>Source Files\Engine\EventSystem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
