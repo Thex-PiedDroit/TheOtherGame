@@ -1,7 +1,7 @@
 
-#include "Engine/Graphics/RenderManager.h"
+#include "RenderManager.h"
 
-#include "Engine/Graphics/IRenderItem.h"
+#include "IRenderItem.h"
 
 
 namespace JFF { namespace Graphics

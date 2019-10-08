@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "Engine/Graphics/Shapes/Shape.h"
+#include "Shape.h"
 #include <SFML/Graphics.hpp>
 
 

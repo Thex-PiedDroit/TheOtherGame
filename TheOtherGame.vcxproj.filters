@@ -68,5 +68,8 @@
     <ClInclude Include="Code\Engine\Graphics\Shapes\Rectangle.h">
       <Filter>Source Files\Engine\Graphics\Shapes</Filter>
     </ClInclude>
+    <ClInclude Include="Code\Engine\Graphics\Shapes\Shapes.h">
+      <Filter>Source Files\Engine\Graphics\Shapes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

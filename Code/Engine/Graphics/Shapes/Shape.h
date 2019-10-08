@@ -3,6 +3,7 @@
 
 #include "Engine/Graphics/IRenderItem.h"
 #include <SFML/Graphics.hpp>
+#include <string>
 
 
 namespace JFF { namespace Graphics
@@ -17,7 +18,8 @@ namespace JFF { namespace Graphics
 		void SetOrigin(sf::Vector2f const& origin);
 		void SetPosition(sf::Vector2f const& position);
 
-		void SetTexture(sf::Texture const* texture, bool adaptRect = false);
+		void LoadTexture(std::string const& textureName, bool adaptRect = true);
+		void SetTexture(std::shared_ptr<const sf::Texture> texture, bool adaptRect = true);
 
 		void Render(sf::RenderWindow* window) const override final;
 
@@ -25,5 +27,6 @@ namespace JFF { namespace Graphics
 	protected:
 
 		sf::Shape& m_shape;
+		std::shared_ptr<const sf::Texture> m_texture;
 	};
 }}

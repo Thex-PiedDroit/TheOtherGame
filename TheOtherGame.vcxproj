@@ -34,6 +34,7 @@
     <ClInclude Include="Code\Engine\Graphics\Shapes\Circle.h" />
     <ClInclude Include="Code\Engine\Graphics\Shapes\Rectangle.h" />
     <ClInclude Include="Code\Engine\Graphics\Shapes\Shape.h" />
+    <ClInclude Include="Code\Engine\Graphics\Shapes\Shapes.h" />
     <ClInclude Include="Code\Engine\types.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

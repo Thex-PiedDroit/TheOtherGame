@@ -1,5 +1,6 @@
 
 #include "Engine/Graphics/Shapes/Shape.h"
+#include "Engine/asserts.hpp"
 
 
 namespace JFF { namespace Graphics
@@ -26,9 +27,24 @@ namespace JFF { namespace Graphics
 		m_shape.setPosition(position);
 	}
 
-	void Shape::SetTexture(sf::Texture const* texture, bool adaptRect /*= false*/)
+	void Shape::LoadTexture(std::string const& textureName, bool adaptRect /*= true*/)
 	{
-		m_shape.setTexture(texture, adaptRect);
+		sf::Texture texture;
+
+		if (texture.loadFromFile("Data/" + textureName))
+		{
+			SetTexture(std::make_shared<const sf::Texture>(texture), adaptRect);
+		}
+		else
+		{
+			AssertNotReached("Texture \"" + textureName + "\" could not be loaded.");
+		}
+	}
+
+	void Shape::SetTexture(std::shared_ptr<const sf::Texture> texture, bool adaptRect /*= false*/)
+	{
+		m_texture = texture;
+		m_shape.setTexture(m_texture.get(), adaptRect);
 	}
 
 	void Shape::Render(sf::RenderWindow* window) const

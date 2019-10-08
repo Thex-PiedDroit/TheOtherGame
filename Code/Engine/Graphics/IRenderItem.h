@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "Engine/Graphics/RenderManager.h"
+#include "RenderManager.h"
 #include <SFML/Graphics.hpp>
 
 
