@@ -19,7 +19,6 @@ namespace JFF
 		void SetPosition(sf::Vector2f const& position);
 
 		void LoadTexture(std::string const& textureName, bool adaptRect = true);
-		void SetTexture(std::shared_ptr<const sf::Texture> texture, bool adaptRect = true);
 
 		void Render(sf::RenderWindow* window) const override final;
 
@@ -27,6 +26,6 @@ namespace JFF
 	protected:
 
 		sf::Shape& m_shape;
-		std::shared_ptr<const sf::Texture> m_texture;
+		sf::Texture m_texture;
 	};
 }

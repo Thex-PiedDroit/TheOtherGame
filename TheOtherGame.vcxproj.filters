@@ -113,5 +113,8 @@
     <ClInclude Include="Source\Gameplay\Entities\Animals\Cow.h">
       <Filter>Source Files\Gameplay\Entities\Animals</Filter>
     </ClInclude>
+    <ClInclude Include="Gameplay\gameConstants.h">
+      <Filter>Source Files\Gameplay</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

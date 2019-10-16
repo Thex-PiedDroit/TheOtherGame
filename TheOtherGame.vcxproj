@@ -30,6 +30,7 @@
     <ClCompile Include="Source\Gameplay\gameMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Gameplay\gameConstants.h" />
     <ClInclude Include="Source\Engine\assert.hpp" />
     <ClInclude Include="Source\Engine\Components\Transform2D.h" />
     <ClInclude Include="Source\Engine\defines.h" />
