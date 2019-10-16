@@ -21,11 +21,6 @@ namespace JFF
 	// TODO: Remove unsafe void* and string
 	class Event
 	{
-	private:
-
-		std::vector<IEventObserver*> m_listeners;
-
-
 	public:
 
 		void Invoke(void* subject, EventType const& eventType);
@@ -33,5 +28,10 @@ namespace JFF
 		inline void RegisterObserver(void* observer) { m_listeners.push_back(observer); }
 		void UnregisterObserver(void* observer);
 		inline void operator() (void* subject, EventType const& eventType) { Invoke(subject, eventType); }
+
+
+	private:
+
+		std::vector<IEventObserver*> m_listeners;
 	};
 }
