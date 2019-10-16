@@ -2,7 +2,7 @@
 #include "Circle.h"
 
 
-namespace JFF {
+namespace JFF
 {
 	Circle::Circle(float radius /*= 0.0f*/)
 		: Shape(m_circle)

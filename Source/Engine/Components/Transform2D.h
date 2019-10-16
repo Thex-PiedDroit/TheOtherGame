@@ -10,12 +10,6 @@ namespace JFF
 {
 	class Transform2D
 	{
-	private:
-
-		sf::Vector2f m_position;
-		float m_rotation;
-
-
 	public:
 
 		const static EventType OnMove;
@@ -34,5 +28,11 @@ namespace JFF
 
 		void SetPosition(sf::Vector2f const& position);
 		void SetRotation(float rotation);
+
+
+	private:
+
+		sf::Vector2f m_position;
+		float m_rotation;
 	};
 }

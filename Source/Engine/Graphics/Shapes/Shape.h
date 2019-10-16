@@ -10,12 +10,6 @@ namespace JFF
 {
 	/*abstract*/ class Shape : Graphics::IRenderItem
 	{
-	protected:
-
-		sf::Shape& m_shape;
-		std::shared_ptr<const sf::Texture> m_texture;
-
-
 	public:
 
 		Shape(sf::Shape& shape);
@@ -28,5 +22,11 @@ namespace JFF
 		void SetTexture(std::shared_ptr<const sf::Texture> texture, bool adaptRect = true);
 
 		void Render(sf::RenderWindow* window) const override final;
+
+
+	protected:
+
+		sf::Shape& m_shape;
+		std::shared_ptr<const sf::Texture> m_texture;
 	};
 }
