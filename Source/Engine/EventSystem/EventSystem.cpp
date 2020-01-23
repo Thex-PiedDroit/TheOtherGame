@@ -10,7 +10,7 @@ namespace JFF
 			listener->ObservedEventUpdate(subject, eventType);
 	}
 
-	void Event::UnregisterObserver(void* observer)
+	void Event::UnregisterObserver(IEventObserver* observer)
 	{
 		auto const& iterator = std::find(m_listeners.begin(), m_listeners.end(), observer);
 

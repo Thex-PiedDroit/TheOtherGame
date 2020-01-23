@@ -1,4 +1,4 @@
 
-#pragma one
+#pragma once
 
 #define WITH_DEBUG

@@ -25,8 +25,8 @@ namespace JFF
 
 		void Invoke(void* subject, EventType const& eventType);
 
-		inline void RegisterObserver(void* observer) { m_listeners.push_back(observer); }
-		void UnregisterObserver(void* observer);
+		inline void RegisterObserver(IEventObserver* observer) { m_listeners.push_back(observer); }
+		void UnregisterObserver(IEventObserver* observer);
 		inline void operator() (void* subject, EventType const& eventType) { Invoke(subject, eventType); }
 
 
