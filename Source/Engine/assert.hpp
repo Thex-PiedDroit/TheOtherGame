@@ -35,9 +35,9 @@ namespace JFF
 
 #ifdef WITH_DEBUG
 	#define throw_assert(EXPRESSION, MESSAGE) if(!(EXPRESSION)) { throw JFF::AssertionFailureException(#EXPRESSION, __FILE__, __LINE__, MESSAGE); }
-	constexpr auto throw_assertNotReached(std::string const& message) { return throw JFF::AssertionFailureException(message); }
+	#define throw_assertNotReached(MESSAGE) { return throw JFF::AssertionFailureException(MESSAGE); }
 #else
 	#define throw_assert(EXPRESSION, MESSAGE) ((void)0)
-	constexpr auto throw_assertNotReached(std::string const&) { }
+	#define throw_assertNotReached(MESSAGE) { }
 #endif
 }
