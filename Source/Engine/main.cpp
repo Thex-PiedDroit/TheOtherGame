@@ -1,5 +1,6 @@
 
 #include "assert.hpp"
+#include "Time.h"
 #include "Gameplay/gameMain.h"
 #include "Graphics/RenderManager.h"
 
@@ -24,6 +25,8 @@ void GameLoop(sf::RenderWindow& window)
 
 		Update();
 		JFF::Graphics::RenderManager::RenderItems();
+
+		JFF::Time::RestartDeltaTimeClock();
 	}
 }
 
