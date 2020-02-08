@@ -21,14 +21,17 @@
   <ItemGroup>
     <ClCompile Include="Source\Engine\Components\Transform2D.cpp" />
     <ClCompile Include="Source\Engine\EventSystem\EventSystem.cpp" />
+    <ClCompile Include="Source\Engine\EventSystem\EventType.cpp" />
     <ClCompile Include="Source\Engine\Graphics\RenderManager.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Shapes\Circle.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Shapes\Rectangle.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Shapes\Shape.cpp" />
     <ClCompile Include="Source\Engine\main.cpp" />
+    <ClCompile Include="Source\Gameplay\Entities\Animals\Cow.cpp" />
     <ClCompile Include="Source\Gameplay\gameMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Gameplay\gameConstants.h" />
     <ClInclude Include="Source\Engine\assert.hpp" />
     <ClInclude Include="Source\Engine\Components\Transform2D.h" />
     <ClInclude Include="Source\Engine\defines.h" />
@@ -42,6 +45,7 @@
     <ClInclude Include="Source\Engine\Graphics\Shapes\Shape.h" />
     <ClInclude Include="Source\Engine\Graphics\Shapes\Shapes.h" />
     <ClInclude Include="Source\Engine\types.hpp" />
+    <ClInclude Include="Source\Gameplay\Entities\Animals\Cow.h" />
     <ClInclude Include="Source\Gameplay\gameMain.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

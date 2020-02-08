@@ -30,22 +30,14 @@ namespace JFF
 
 	void Shape::LoadTexture(std::string const& textureName, bool adaptRect /*= true*/)
 	{
-		sf::Texture texture;
-
-		if (texture.loadFromFile("Data/" + textureName))
+		if (m_texture.loadFromFile("Data/" + textureName))
 		{
-			SetTexture(std::make_shared<const sf::Texture>(texture), adaptRect);
+			m_shape.setTexture(&m_texture, adaptRect);
 		}
 		else
 		{
 			throw_assertNotReached("Texture \"" + textureName + "\" could not be loaded.");
 		}
-	}
-
-	void Shape::SetTexture(std::shared_ptr<const sf::Texture> texture, bool adaptRect /*= false*/)
-	{
-		m_texture = texture;
-		m_shape.setTexture(m_texture.get(), adaptRect);
 	}
 
 	void Shape::Render(sf::RenderWindow* window) const

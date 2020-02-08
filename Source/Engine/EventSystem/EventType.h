@@ -16,6 +16,9 @@ namespace JFF
 
 		}
 
+		bool operator== (EventType const& other) const;
+		bool operator!= (EventType const& other) const;
+
 
 	private:
 
