@@ -14,24 +14,28 @@ namespace JFF
 
 	protected:
 
-		virtual void ObservedEventUpdate(void* subject, EventType const& eventType) = 0;
+		virtual void HandleEvent(EventType const& eventType, void* subject) = 0;
 	};
 
 
-	// TODO: Remove unsafe void* and string
+	// TODO: Remove unsafe void*
 	class Event
 	{
 	public:
 
-		void Invoke(void* subject, EventType const& eventType);
+		Event() = delete;
+		Event(EventType const& eventType);
+
+		void Invoke(void* subject);
 
 		inline void RegisterObserver(IEventObserver* observer) { m_listeners.push_back(observer); }
 		void UnregisterObserver(IEventObserver* observer);
-		inline void operator() (void* subject, EventType const& eventType) { Invoke(subject, eventType); }
+		inline void operator() (void* subject) { Invoke(subject); }
 
 
 	private:
 
 		std::vector<IEventObserver*> m_listeners;
+		const EventType m_eventType;
 	};
 }

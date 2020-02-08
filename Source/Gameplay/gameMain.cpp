@@ -14,5 +14,5 @@ void Initialize()
 
 void Update()
 {
-
+	cow.Update();
 }

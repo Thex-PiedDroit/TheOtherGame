@@ -66,6 +66,9 @@
     <ClCompile Include="Source\Gameplay\Entities\Animals\Cow.cpp">
       <Filter>Source Files\Gameplay\Entities\Animals</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Engine\EventSystem\EventType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Engine\generics.hpp">

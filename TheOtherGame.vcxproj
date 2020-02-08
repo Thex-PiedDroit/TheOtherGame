@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="Source\Engine\Components\Transform2D.cpp" />
     <ClCompile Include="Source\Engine\EventSystem\EventSystem.cpp" />
+    <ClCompile Include="Source\Engine\EventSystem\EventType.cpp" />
     <ClCompile Include="Source\Engine\Graphics\RenderManager.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Shapes\Circle.cpp" />
     <ClCompile Include="Source\Engine\Graphics\Shapes\Rectangle.cpp" />

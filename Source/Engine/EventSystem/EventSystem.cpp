@@ -4,10 +4,16 @@
 
 namespace JFF
 {
-	void Event::Invoke(void* subject, EventType const& eventType)
+	Event::Event(EventType const& eventType)
+		: m_eventType(eventType)
+	{
+
+	}
+
+	void Event::Invoke(void* subject)
 	{
 		for (auto& listener : m_listeners)
-			listener->ObservedEventUpdate(subject, eventType);
+			listener->HandleEvent(m_eventType, subject);
 	}
 
 	void Event::UnregisterObserver(IEventObserver* observer)
